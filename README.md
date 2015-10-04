@@ -11,7 +11,7 @@ Read the [wiki](https://github.com/madhums/node-express-mongoose/wiki) to unders
 
 ## Installation and Usage
 
-    $ git clone https://github.com/kamiranoff/boilerplate-fullstack.git
+    $ git clone https://github.com/kamiranoff/fullstack-boilerplate.git
     $ cd boilerplate-fullstack
     $ npm install
     $ npm start
