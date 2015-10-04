@@ -3,6 +3,8 @@
 [![Dependencies](https://img.shields.io/david/madhums/node-express-mongoose.svg?style=flat)](https://david-dm.org/madhums/node-express-mongoose)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/madhums/node-express-mongoose?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) -->
 
+## This is so largely inspired by https://github.com/madhums/node-express-mongoose. All credits goes to them.
+
 ## Boilerplate base Node Express Mongoose
 
 A boilerplate application for building web apps using express, mongoose and passport.
