@@ -22,19 +22,20 @@ connect();
 mongoose.connection.on('error', console.log);
 mongoose.connection.on('disconnected', connect);
 
+console.log(__dirname);
 // Bootstrap models
-fs.readdirSync(__dirname + '/app/models').forEach(function (file) {
-  if (~file.indexOf('.js')) require(__dirname + '/app/models/' + file);
+fs.readdirSync(__dirname + '/server/routes/root/models/').forEach(function (file) {
+  if (~file.indexOf('.js')) require(__dirname + '/server/routes/root/models/' + file);
 });
 
 // Bootstrap passport config
-require('./config/passport')(passport, config);
+require('./server/passport')(passport, config);
 
 // Bootstrap application settings
-require('./config/express')(app, passport);
+require('./server/express')(app, passport);
 
 // Bootstrap routes
-require('./config/routes')(app, passport);
+require('./server/routes')(app, passport);
 
 app.listen(port);
 console.log('Express app started on port ' + port);

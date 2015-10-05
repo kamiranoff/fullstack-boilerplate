@@ -1,0 +1,17 @@
+extends superlayout.jade
+
+block head
+  include ../includes/head.jade
+
+block body
+  include ../includes/header.jade
+  .container
+    .page-header
+      block main
+    .messages
+      include ../includes/messages.jade
+    .content
+      block content
+
+  include ../includes/footer.jade
+  include ../includes/foot.jade
